@@ -3,6 +3,11 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #040404;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -177,96 +182,84 @@ li {
     line-height: 18%;
 }
 
-.Trsp {
-    padding-left: 130px;
-}
-
-.all {
+.cards {
+    box-sizing: border-box;
+    margin-top: 4rem;
     display: flex;
-    padding-left: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: baseline; */
 }
 
-.Cards {
-    display: flex;
+.card {
+    width: 15rem;
+    box-sizing: border-box;
+    max-width: 25%;
+    min-width: 14rem;
+    padding: 2%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    flex-direction: column;
+
 }
 
-.Card {
-    background-color: #FFF3D9;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 16px;
-    margin: 30px;
-    margin-top: 4px;
-    padding-top: 16px;
-    height: 400px;
-    width: 270px;
-}
-
-.Card h4 {
+.status {
+    width: fit-content;
+    padding: .5rem 2rem;
+    margin-bottom: 1rem;
     background-color: #13366D;
-    color: aliceblue;
-    border-radius: 18px;
-    margin-top: 1px;
-    padding-top: 13px;
-    padding-left: 12px;
-    text-align: center;
-    height: 12%;
-    width: 60%;
-}
-
-.Card h5 {
-    border: 1px solid darkblue;
-    border-radius: 6px;
-    padding-top: 16px;
-    text-align: center;
-    color: darkblue;
-    box-shadow: 10px;
-    height: 13%;
-    width: 100%;
-    /* font-family: 'Karla', sans-serif;
-    font-size: 18px; */
-}
-
-.Card h5:hover {
-    background-color: #0B48A8;
     color: white;
-    box-shadow: 0px 4px 0px #13366D;
+    text-align: center;
+    border-radius: 30px;
 }
 
-.Card h5 a {
+.month {
+    font-size: medium;
+    color: gray;
+}
+
+.info-price {
+    font-size: 0.9rem;
+    color: #040404;
+}
+
+.info-price p:hover {
+    font-weight: bold;
+    /* color: #040404; */
+}
+
+.try1 {
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
-    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #0B48A8;
+    color: #0B48A8;
+
 }
 
-.pric_1 {
-    padding-top: 10%;
-}
-
-.pric_2 {
-    padding-top: 17%;
-}
-
-.contact {
-    padding-top: 37%;
-}
-
-.contact a {
-    color: black;
+.try1:hover {
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0B48A8;
+    color: #FBF7EE;
+    box-shadow: 0px 4px 0px 0px #041c40;
 }
 
-.Ads {
-    border: 1px solid black;
-    padding: 16px;
-    margin: 30px;
-    margin-top: 4px;
-    padding-top: 1px;
-    height: 290px;
-    width: 270px;
-}
 
-.Ads img {
+
+.card img {
     width: 100%;
+
 }
 
 .left-section {
@@ -292,15 +285,19 @@ footer {
 .contact {
     height: 2.5rem;
     border-radius: 5px;
-    border: 1px solid #8a8a8a;
+    border: 1px solid #8a8a8aad;
     width: inherit;
     height: 30px;
     margin-right: 20px;
 }
 
+.label {
+    color: #4B4B4B;
+}
+
 .contact1 {
     border-radius: 5px;
-    border: 1px solid #8a8a8a;
+    border: 1px solid #8a8a8aad;
     width: inherit;
     /* height: 30px; */
     margin-right: 20px;
@@ -328,7 +325,15 @@ footer {
 }
 
 .main {
-    background-color: white;
+    /* background-color: white; */
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
     padding: 4rem;
     border-radius: 3rem;
+}
+
+.contact-img img {
+    -webkit-filter: drop-shadow(7px 6px 0px #2222225d);
+    filter: drop-shadow(7px 6px 0px #2222225d);
+    /* -webkit-box-shadow: 10px 6px 0px 0px rgba(0, 0, 0, 0.25); */
+    /* box-shadow: 10px 6px 0px 0px rgba(0, 0, 0, 0.25); */
 }

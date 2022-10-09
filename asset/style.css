@@ -82,6 +82,8 @@ li {
 .title {
     color: #13366d;
     font-size: xxx-large;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
 }
 
 .para {
@@ -174,7 +176,11 @@ li {
 
 .fiche p {
     line-height: 147%;
-    opacity: 0.92;
+    /* opacity: 0.92; */
+    color: #A2A2A2;
+}
+
+.grey {
     color: #A2A2A2;
 }
 
@@ -229,7 +235,7 @@ li {
 }
 
 .month {
-    font-size: medium;
+    font-weight: normal;
     color: gray;
 }
 
@@ -377,6 +383,11 @@ footer {
 
 .ads {
     height: 80%;
+    border: 1px solid black;
+}
+
+.ads p {
+    margin-top: 0;
 }
 
 @media screen and (max-width: 1129px) {

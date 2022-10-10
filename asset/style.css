@@ -19,11 +19,16 @@ ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-
 }
 
 li {
     padding-left: 16px;
+}
+
+footer {
+    font-size: small;
+    color: gray;
+    padding: 2rem 0 1rem 0;
 }
 
 .container {
@@ -33,7 +38,6 @@ li {
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
-
 }
 
 .logo {
@@ -43,18 +47,13 @@ li {
     color: #13366D;
 }
 
-
 .btns {
     display: flex;
-    /* position: relative; */
-    /* justify-content: flex-end; */
-    /* flex: 1 1 0%; */
 }
 
 .try {
     font-weight: bold;
     text-decoration: none;
-    /* border: 1px solid blue; */
     padding: 10px 25px;
     border-radius: 5px;
     background-color: #0B48A8;
@@ -67,11 +66,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex: 4 0 0%; */
     height: 100%;
 }
-
-
 
 .Sign {
     text-decoration: none;
@@ -83,7 +79,6 @@ li {
     color: #13366d;
     font-size: xxx-large;
     margin-bottom: 1.5rem;
-    margin-top: 4rem;
 }
 
 .para {
@@ -95,10 +90,7 @@ li {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* align-items: baseline; */
 }
-
-
 
 .info {
     padding-top: 20px;
@@ -137,17 +129,10 @@ li {
 }
 
 .fiches {
-    /* box-sizing: border-box;
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline; */
-    margin-top: 2rem;
+    margin: 2rem 0;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 1rem;
-    column-gap: 1rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
 }
 
 .fiche {
@@ -173,10 +158,8 @@ li {
     padding-left: 1px;
 }
 
-
 .fiche p {
     line-height: 147%;
-    /* opacity: 0.92; */
     color: #A2A2A2;
 }
 
@@ -197,9 +180,7 @@ li {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    row-gap: 1rem;
-    column-gap: 1rem;
-
+    gap: 1rem;
 }
 
 .card {
@@ -211,10 +192,9 @@ li {
     border: 1px solid rgb(228, 228, 228);
     border-radius: 4px;
     background-color: #FFF3D9;
-
 }
 
-.cardd {
+.card-contenu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,7 +226,6 @@ li {
 
 .info-price p:hover {
     font-weight: bold;
-    /* color: #040404; */
 }
 
 .try1 {
@@ -259,7 +238,6 @@ li {
     border-radius: 5px;
     border: 1px solid #0B48A8;
     color: #0B48A8;
-
 }
 
 .try1:hover {
@@ -275,8 +253,6 @@ li {
     box-shadow: 0px 4px 0px 0px #041c40;
 }
 
-
-
 .card img {
     width: 100%;
 
@@ -287,20 +263,10 @@ li {
     margin-left: 2rem;
 }
 
-
-
-footer {
-    font-size: small;
-    color: gray;
-    padding: 2rem 0 1rem 0;
-}
-
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
 }
 
 .left-content {
@@ -330,7 +296,6 @@ footer {
     border-radius: 5px;
     border: 1px solid #8a8a8aad;
     width: inherit;
-    /* height: 30px; */
     margin-right: 20px;
 }
 
@@ -344,7 +309,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: baseline; */
 }
 
 .input {
@@ -352,7 +316,6 @@ footer {
 }
 
 .main {
-    /* background-color: white; */
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
     padding: 4rem;
     border-radius: 3rem;
@@ -378,7 +341,6 @@ footer {
 
 .img-right {
     width: 100%;
-    /* max-width: 500px; */
 }
 
 .ads {
@@ -417,11 +379,6 @@ footer {
         max-width: none;
     }
 
-    .fiche {
-        width: fit-content;
-        /* margin-bottom: 1rem; */
-    }
-
     .card {
         flex-direction: column;
         width: 100%;
@@ -431,13 +388,11 @@ footer {
 
 
     .fiches {
-        grid-template-columns: 1fr 1fr;
-
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-
     }
 
     .ads {
@@ -445,8 +400,7 @@ footer {
     }
 
     .content {
-
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .contact-img {
@@ -463,24 +417,20 @@ footer {
     nav {
         align-items: center;
         flex-direction: column;
-
     }
 
     ul {
         list-style-type: none;
         display: unset;
         align-items: center;
-
     }
 
     .fiches {
-        grid-template-columns: 1fr;
-
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .cards {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-
     }
 
     .ads {
@@ -488,8 +438,7 @@ footer {
     }
 
     .content {
-
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .contact-img {
@@ -520,7 +469,7 @@ footer {
     }
 
     .content {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .contact-img {
